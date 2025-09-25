@@ -1,3 +1,38 @@
+:root {
+  --texts-second: #333;
+  --texts-error: #ff5757;
+  --texts-hover: #756157;
+  --texts-active: rgba(117, 97, 87, 0.3);
+  --texts-texts-basic: #000;
+  --texts-background-deafault: #fff;
+  --texts-background-small: rgba(255, 255, 255, 0.3);
+  --texts-background-hover: rgba(255, 255, 255, 0.6);
+  --texts-background-active: rgba(255, 255, 255, 0.3);
+  --buttons-basic: #756157;
+  --buttons-second: #82b3d3;
+  --buttons-select: #7db54f;
+  --buttons-disabled: #e5e5e5;
+  --buttons-brown-hover: #615048;
+  --buttons-blue-hover: #68a2ca;
+  --buttons-green-hover: #6c9e42;
+  --background-basic-1: #fff;
+  --background-basic-2: rgba(0, 0, 0, 0.3);
+  --background-basic-3: #82b3d3;
+  --background-second-1: rgba(131, 179, 211, 0.12);
+  --background-second-2: rgba(131, 179, 211, 0.2);
+  --icons-basic: #000;
+  --icons-second: #83b3d3;
+  --icons-text: #7db54f;
+  --icons-hover: #756157;
+  --icons-active: rgba(117, 97, 87, 0.3);
+  --icons-second-hover: #68a2ca;
+  --icons-second-active: rgba(104, 162, 202, 0.3);
+  --forms-inputs: #3f5e72;
+  --forms-elements-1: #e5e5e5;
+  --forms-elements-2: #f2f2f2;
+  --font-family: "PT Sans", sans-serif;
+}
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -15,7 +50,144 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: var(--font-family), sans-serif;
   font-size: 18px;
   line-height: 21px;
+  color: var(--texts-second);
+  background-color: var(--texts-background-deafault);
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--texts-background-deafault);
+  background-color: var(--buttons-basic);
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--texts-texts-basic);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero {
+  text-align: center;
+  color: var(--texts-texts-basic);
+  background-color: var(--background-basic-2);
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--texts-texts-basic);
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-item {
+  background-color: var(--background-second-1);
+}
+
+.advantages-item-title {
+  color: var(--texts-texts-basic);
+  text-transform: uppercase;
+}
+
+.advantages-item-middle {
+  background-color: var(--background-second-2);
+}
+
+.advantages-item-big {
+  color: var(--texts-background-deafault);
+  background-color: var(--buttons-second);
+}
+
+.advantages-item-big .advantages-item-title {
+  color: var(--texts-background-deafault);
+}
+
+.features {
+  text-align: center;
+}
+
+.features-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--texts-texts-basic);
+  text-transform: uppercase;
+}
+
+.features-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.features-item:nth-child(2n-1)  {
+  background-color: var(--background-second-1);
+}
+
+.features-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--texts-texts-basic);
+  text-transform: uppercase;
+}
+
+.booking {
+  text-align: center;
+}
+
+.booking-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--texts-texts-basic);
+  text-transform: uppercase;
+}
+
+.booking-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.booking-button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscribe {
+  text-align: center;
+  background-color: var(--background-basic-2);
+}
+
+.subscribe-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--texts-texts-basic);
+  text-transform: uppercase;
+}
+
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
 }

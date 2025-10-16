@@ -612,7 +612,7 @@ img {
   fill: var(--texts-hover);
 }
 
-.htmlacademy-link:active path{
+.htmlacademy-link:active path {
   fill: var(--texts-active);
 }
 
@@ -699,6 +699,94 @@ img {
   width: 288px;
 }
 
+/* Range */
+.range {
+  max-width: 288px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.catalog-filter-label {
+  box-sizing: border-box;
+  width: 143px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--texts-texts-basic);
+  background-color: var(--texts-background-deafault);
+}
+
+.catalog-filter-label:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.catalog-filter-label:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.catalog-filter-label:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.range-input {
+  font: inherit;
+  text-align: left;
+  font-weight: 700;
+  border: none;
+  appearance: textfield;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: var(--texts-background-small);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: var(--texts-background-deafault);
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--texts-background-deafault);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  top: -100%;
+}
+
+.range-toggle:hover {
+  background-color: var(--texts-background-deafault);
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.toggle-min {
+  top: -7px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -7px;
+  right: -10px;
+}
+
 .catalog-filter-title {
   margin: 0 0 32px;
   font-size: 20px;
@@ -743,8 +831,10 @@ img {
   box-shadow: 0 0 0 3px var(--icons-second);
 }
 
-.control:hover .control-mark {}
-.control:hover .control-label{
+.control:hover .control-mark {
+}
+
+.control:hover .control-label {
   opacity: 0.6;
 }
 
@@ -972,17 +1062,31 @@ img {
 .stars-count {
   align-self: center;
   display: inline-block;
-  width: 140px;   /* ширина под 5 звёзд */
+  width: 140px; /* ширина под 5 звёзд */
   height: 20px;
   background: url("../images/star.svg") repeat-x;
   background-size: 20px 20px;
 }
 
-.stars-count-1 { width: 20px; }
-.stars-count-2 { width: 40px; }
-.stars-count-3 { width: 60px; }
-.stars-count-4 { width: 80px; }
-.stars-count-5 { width: 100px; }
+.stars-count-1 {
+  width: 20px;
+}
+
+.stars-count-2 {
+  width: 40px;
+}
+
+.stars-count-3 {
+  width: 60px;
+}
+
+.stars-count-4 {
+  width: 80px;
+}
+
+.stars-count-5 {
+  width: 100px;
+}
 
 .product-card-rating {
   padding: 8px;
